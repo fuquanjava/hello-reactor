@@ -1,11 +1,11 @@
-package hello.reactor.example1.service;
+package spring.reactor.example1.service;
 
-import hello.reactor.example1.domain.QuoteResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 import reactor.bus.Event;
 import reactor.fn.Consumer;
+import spring.reactor.example1.domain.QuoteResource;
 
 import java.util.concurrent.CountDownLatch;
 

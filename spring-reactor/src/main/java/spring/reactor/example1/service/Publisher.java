@@ -1,4 +1,4 @@
-package hello.reactor.example1.service;
+package spring.reactor.example1.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

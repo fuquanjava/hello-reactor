@@ -1,4 +1,4 @@
-package hello.reactor.example1.domain;
+package spring.reactor.example1.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 

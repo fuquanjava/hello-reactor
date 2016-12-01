@@ -1,7 +1,4 @@
-package hello.reactor.example1;
-
-import hello.reactor.example1.service.Publisher;
-import hello.reactor.example1.service.Receiver;
+package spring.reactor.example1;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,6 +9,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import reactor.Environment;
 import reactor.bus.EventBus;
+import spring.reactor.example1.service.Publisher;
+import spring.reactor.example1.service.Receiver;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
@@ -65,5 +64,6 @@ public class Application implements CommandLineRunner {
         app.getBean(CountDownLatch.class).await(1, TimeUnit.SECONDS);
 
         app.getBean(Environment.class).shutdown();
+
     }
 }
